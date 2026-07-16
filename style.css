@@ -1,0 +1,195 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:14px;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+nav h2{
+    color: white;
+    font-size: 28px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #38bdf8;
+}
+
+/* ==========================
+   HOME
+========================== */
+
+#home{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#home h1{
+    font-size: 48px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+#home h3{
+    color: #2563eb;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#home p{
+    font-size: 14px;
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+/* Button */
+
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #1d4ed8;
+}
+/* ===========================
+   Footer Section
+=========================== */
+
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    font-size: 28px;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 8px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00bcd4;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+.certificate-card img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Achievements styling */
+.achievement-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* ya jo bhi aapka theme color ho */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.achievement-icon {
+    width: 60px; /* Trophy photo ka size control karne ke liye */
+    height: auto;
+    margin-right: 20px; /* Photo aur text ke beech ka gap */
+}
+
+.achievement-details h3 {
+    margin: 0 0 5px 0;
+}
+
+.achievement-details p {
+    margin: 0;
+}

@@ -1,34 +1,34 @@
-
-
-*{
+/* ==========================================
+   1. GENERAL STYLES (Computer & Phone Dono Ke Liye)
+   ========================================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-size:14px;
+body {
+    font-size: 14px;
     font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* ==========================
-   HEADER
-========================== */
-
-header{
+/* ==========================================
+   2. HEADER & NAVIGATION
+   ========================================== */
+header {
     background: #0f172a;
     position: sticky;
     top: 0;
@@ -36,7 +36,7 @@ header{
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-nav{
+nav {
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -46,33 +46,32 @@ nav{
     padding: 18px 0;
 }
 
-nav h2{
+nav h2 {
     color: white;
     font-size: 28px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: 0.3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #38bdf8;
 }
 
-/* ==========================
-   HOME
-========================== */
-
-#home{
+/* ==========================================
+   3. HOME / HERO SECTION
+   ========================================== */
+#home {
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -81,64 +80,65 @@ nav ul li a:hover{
     padding: 40px;
 }
 
-#home h1{
+#home h1 {
     font-size: 48px;
     color: #0f172a;
     margin-bottom: 15px;
 }
 
-#home h3{
+#home h3 {
     color: #2563eb;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-#home p{
+#home p {
     font-size: 14px;
     max-width: 700px;
     margin: auto;
     color: #555;
 }
 
-/* Button */
-
-.btn{
+/* ==========================================
+   4. BUTTONS
+   ========================================== */
+.btn {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 28px;
     background: #2563eb;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #1d4ed8;
 }
-/* ===========================
-   Footer Section
-=========================== */
 
+/* ==========================================
+   5. FOOTER
+   ========================================== */
 .footer {
     background: #111;
-    color: #fff;
+    color: #ccc;
     text-align: center;
     padding: 30px 20px;
     margin-top: 50px;
 }
 
 .footer h3 {
-    font-size: 28px;
+    font-size: 20px;
     color: #00bcd4;
     margin-bottom: 10px;
 }
 
 .footer p {
-    font-size: 16px;
-    color: #ccc;
-    margin: 8px 0;
+    font-size: 14px;
+    color: #888;
+    margin: 0px 0;
 }
 
 .footer-links {
@@ -162,28 +162,30 @@ nav ul li a:hover{
     font-size: 14px;
     color: #888;
 }
-.certificate-card img{
-    width: 250px;
+
+/* ==========================================
+   6. CARDS & SECTIONS (Certificates / Achievements)
+   ========================================== */
+.certificate-card img {
     height: 180px;
+    width: 250px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
-/* Achievements styling */
+
 .achievement-card {
     display: flex;
     align-items: center;
-    background-color: #f9f9f9; /* ya jo bhi aapka theme color ho */
+    background-color: #f0f0f0;
     border-radius: 8px;
     padding: 15px;
-    margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .achievement-icon {
-    width: 60px; /* Trophy photo ka size control karne ke liye */
-    height: auto;
-    margin-right: 20px; /* Photo aur text ke beech ka gap */
+    width: 60px;
+    margin-right: 20px;
 }
 
 .achievement-details h3 {
@@ -193,22 +195,63 @@ nav ul li a:hover{
 .achievement-details p {
     margin: 0;
 }
-/* Mobile screen ke liye sab kuch simple aur fit krne ke liye */
-@media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-  
-  body, html, div, section, nav {
-    max-width: 100% !important;
-    overflow-x: hidden; /* Side scroll khatam karne ke liye */
-  }
 
-  /* Jo bhi chizen side-by-side hain, unhe ek ke niche ek krne ke liye */
-  .hero-section, .container, main, header, nav {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
+/* ==========================================
+   7. PERFECT MOBILE VIEW FIXES (Phone Ke Liye)
+   ========================================= */
+@media screen and (max-width: 768px) {
+    /* Screen se bahar content na bhaage */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+
+    /* Navbar ko mobile responsive banane ke liye */
+    nav {
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center !important;
+        padding: 15px 0 !important;
+    }
+
+    nav ul {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding-left: 0 !important;
+        gap: 15px !important;
+    }
+
+    /* Home Page elements ko vertical karne ke liye */
+    #home {
+        padding: 20px !important;
+        min-height: auto !important;
+        margin-top: 40px !important;
+    }
+
+    /* Fonts ko mobile ke hisab se scale karne ke liye */
+    #home h1 {
+        font-size: 28px !important;
+    }
+
+    #home h3 {
+        font-size: 20px !important;
+    }
+
+    /* 1200px aur 700px ki limits ko phone par khatam karne ke liye */
+    .container, #home p {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px !important;
+    }
+
+    /* Achievements card ko ek ke neeche ek karne ke liye */
+    .achievement-card {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .achievement-icon {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
 }

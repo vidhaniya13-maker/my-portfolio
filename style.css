@@ -193,3 +193,22 @@ nav ul li a:hover{
 .achievement-details p {
     margin: 0;
 }
+/* Mobile screen ke liye sab kuch simple aur fit krne ke liye */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body, html, div, section, nav {
+    max-width: 100% !important;
+    overflow-x: hidden; /* Side scroll khatam karne ke liye */
+  }
+
+  /* Jo bhi chizen side-by-side hain, unhe ek ke niche ek krne ke liye */
+  .hero-section, .container, main, header, nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}

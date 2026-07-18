@@ -1,6 +1,6 @@
-/* ==========================================
+/* ==========================================================================
    1. GENERAL STYLES (Computer & Phone Dono Ke Liye)
-   ========================================== */
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +23,12 @@ html {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
-/* ==========================================
+/* ==========================================================================
    2. HEADER & NAVIGATION
-   ========================================== */
+   ========================================================================== */
 header {
     background: #0f172a;
     position: sticky;
@@ -44,7 +44,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0;
+    padding: 18px 30px;
 }
 
 nav h2 {
@@ -69,10 +69,10 @@ nav ul li a:hover {
     color: #38bdf8;
 }
 
-/* ==========================================
+/* ==========================================================================
    3. HOME / HERO SECTION
-   ========================================== 
-   #home {
+   ========================================================================== */
+#home {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -102,9 +102,9 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* ==========================================
+/* ==========================================================================
    4. BUTTONS
-   ========================================== */
+   ========================================================================== */
 .btn {
     display: inline-block;
     margin-top: 30px;
@@ -121,9 +121,9 @@ nav ul li a:hover {
     background: #1d4ed8;
 }
 
-/* ==========================================
+/* ==========================================================================
    5. FOOTER
-   ========================================== */
+   ========================================================================== */
 .footer {
     background: #111;
     color: #ccc;
@@ -166,9 +166,9 @@ nav ul li a:hover {
     color: #888;
 }
 
-/* ==========================================
+/* ==========================================================================
    6. CARDS & SECTIONS (Certificates / Achievements)
-   ========================================== */
+   ========================================================================== */
 .certificate-card img {
     height: 180px;
     width: 250px;
@@ -199,67 +199,92 @@ nav ul li a:hover {
     margin: 0;
 }
 
-/* ==========================================
-   GLOBAL SECTION SPACING
-========================================== */
-
-section{
+/* ==========================================================================
+   7. GLOBAL SECTION SPACING
+   ========================================================================== */
+section {
     width: 90%;
     max-width: 1200px;
     margin: 60px auto;
     padding: 25px 30px;
 }
 
-section h2{
+section h2 {
     margin-bottom: 20px;
 }
 
-section h3{
+section h3 {
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-section p{
+section p {
     margin-bottom: 15px;
 }
 
-
-/* Navigation */
-nav{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 18px 30px;
-}
-
-/* Container */
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 30px;
-}
-
-/* Mobile Responsive */
-@media (max-width:768px){
-
-    section{
-        width:95%;
-        padding:20px 15px;
+/* ==========================================================================
+   8. MOBILE RESPONSIVE (Phone Screen Fixes)
+   ========================================================================== */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 20px 15px;
     }
 
-    #home{
-        width:95%;
-        padding:40px 15px;
+    /* Fixed Padding, Alignment & Overlap for Mobile */
+    #home {
+        width: 95%;
+        padding: 40px 15px;
+        align-items: center;  /* Sab center mein stack ho jaye */
+        text-align: center;   /* Text flow center rahe */
+        min-height: auto;     /* Mobile par screen height adjust ho */
     }
 
-    nav{
-        width:95%;
-        padding:15px;
+    /* Text cut hone se bachane ke liye fonts chote kiye */
+    #home h1 {
+        font-size: 28px; 
     }
 
-    .container{
-        width:95%;
-        padding:0 15px;
+    #home h3 {
+        font-size: 18px;
+    }
+
+    #home p {
+        font-size: 13px;
+    }
+
+    /* Navbar Responsive Fit (Links overlap nahi karenge) */
+    nav {
+        width: 95%;
+        padding: 15px;
+        flex-direction: column; 
+        gap: 12px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding-left: 0;
+        flex-wrap: wrap;       /* Space kam hone par links niche chale jayenge */
+        justify-content: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    /* Cards alignment on mobile */
+    .achievement-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .achievement-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }

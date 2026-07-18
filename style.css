@@ -78,7 +78,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 120px 8% 80px;
 }
 
 #home h1 {
@@ -90,12 +90,13 @@ nav ul li a:hover {
 #home h3 {
     color: #2563eb;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #home p {
     font-size: 14px;
     max-width: 700px;
+    line-height: 1.8;
     margin: auto;
     color: #555;
 }

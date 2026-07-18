@@ -71,14 +71,15 @@ nav ul li a:hover {
 
 /* ==========================================
    3. HOME / HERO SECTION
-   ========================================== */
-#home {
+   ========================================== 
+   #home {
     min-height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 120px 8% 80px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 120px 60px 80px;
 }
 
 #home h1 {
@@ -97,7 +98,7 @@ nav ul li a:hover {
     font-size: 14px;
     max-width: 700px;
     line-height: 1.8;
-    margin: auto;
+    margin: 0;
     color: #555;
 }
 
@@ -222,13 +223,6 @@ section p{
     margin-bottom: 15px;
 }
 
-/* Home Section */
-#home{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 30px;
-}
 
 /* Navigation */
 nav{

@@ -23,6 +23,7 @@ html {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 
 /* ==========================================
@@ -197,61 +198,73 @@ nav ul li a:hover {
 }
 
 /* ==========================================
-   7. PERFECT MOBILE VIEW FIXES (Phone Ke Liye)
-   ========================================= */
-@media screen and (max-width: 768px) {
-    /* Screen se bahar content na bhaage */
-    html, body {
-        overflow-x: hidden !important;
-        max-width: 100% !important;
+   GLOBAL SECTION SPACING
+========================================== */
+
+section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 25px 30px;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+
+section h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p{
+    margin-bottom: 15px;
+}
+
+/* Home Section */
+#home{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+/* Navigation */
+nav{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+}
+
+/* Container */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    section{
+        width:95%;
+        padding:20px 15px;
     }
 
-    /* Navbar ko mobile responsive banane ke liye */
-    nav {
-        flex-direction: column !important;
-        gap: 15px !important;
-        text-align: center !important;
-        padding: 15px 0 !important;
+    #home{
+        width:95%;
+        padding:40px 15px;
     }
 
-    nav ul {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        padding-left: 0 !important;
-        gap: 15px !important;
+    nav{
+        width:95%;
+        padding:15px;
     }
 
-    /* Home Page elements ko vertical karne ke liye */
-    #home {
-        padding: 20px !important;
-        min-height: auto !important;
-        margin-top: 40px !important;
-    }
-
-    /* Fonts ko mobile ke hisab se scale karne ke liye */
-    #home h1 {
-        font-size: 28px !important;
-    }
-
-    #home h3 {
-        font-size: 20px !important;
-    }
-
-    /* 1200px aur 700px ki limits ko phone par khatam karne ke liye */
-    .container, #home p {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 10px !important;
-    }
-
-    /* Achievements card ko ek ke neeche ek karne ke liye */
-    .achievement-card {
-        flex-direction: column !important;
-        text-align: center !important;
-    }
-
-    .achievement-icon {
-        margin-right: 0 !important;
-        margin-bottom: 10px !important;
+    .container{
+        width:95%;
+        padding:0 15px;
     }
 }
